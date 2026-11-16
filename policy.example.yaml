@@ -1,0 +1,12 @@
+# Copy to ${BRIDGE_HOME:-~/.claude/channels/bridge}/policy.yaml
+# Risk threshold in [0, 1]. A task or message scoring at or above it is held for the owner.
+# Precedence: `bridge share --threshold` for a session, else this value, else 0.3.
+threshold: 0.3
+# Extra deny-list: regular expressions (JavaScript syntax) matched against tool input
+# while a remote thread is active. A match blocks the call and holds the task.
+extraDeny: []
+#  - "\\bnpm\\s+publish\\b"
+classifier:
+  # Per-call timeout for the risk classifier. On timeout the verdict is "hold" / "deny".
+  # The PreToolUse hook caps this at 22000 ms regardless of the value set here.
+  timeoutMs: 20000

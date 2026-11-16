@@ -1,0 +1,21 @@
+{
+  "name": "@claude-bridge/relay",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/main.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@claude-bridge/core": "0.1.0",
+    "better-sqlite3": "^11.5.0",
+    "ws": "^8.23.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/ws": "^8.18.2"
+  }
+}

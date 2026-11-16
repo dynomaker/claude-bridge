@@ -1,0 +1,6 @@
+{
+  "name": "bridge",
+  "version": "0.1.0",
+  "description": "Send tasks between Claude Code sessions on different machines over an end-to-end encrypted relay, with receiver-side policy gating.",
+  "license": "MIT"
+}
